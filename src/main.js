@@ -36,17 +36,17 @@ window.onload = function () {
     setGame();
 }
 
-// function setGame() {
-//     // Digits 1-9
-//     for (let i = 1; i <= 9; i++) {
-//         //<div id="1" class="number">1</div>
-//         let number = document.createElement("div");
-//         number.id = i
-//         number.innerText = i;
-//         number.addEventListener("click", selectNumber);
-//         number.classList.add("number");
-//         document.getElementById("digits").appendChild(number);
-//     }
+function setGame() {
+    // Digits 1-9
+    for (let i = 1; i <= 9; i++) {
+        //<div id="1" class="number">1</div>
+        let number = document.createElement("div");
+        number.id = i
+        number.innerText = i;
+        number.addEventListener("click", selectNumber);
+        number.classList.add("number");
+        document.getElementById("digits").appendChild(number);
+    }
 
     // Board 9x9
     for (let r = 0; r < 9; r++) {
