@@ -50,7 +50,7 @@ function setGame() {
 
     // Board 9x9
     for (let r = 0; r < 9; r++) {
-        for (let c = 0; c < 9; c++) {
+        // for (let c = 0; c < 9; c++) {
             let tile = document.createElement("div");
             tile.id = r.toString() + "-" + c.toString();
             if (board[r][c] != "-") {
